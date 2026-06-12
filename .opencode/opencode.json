@@ -1,0 +1,32 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "default_agent": "dispatcher",
+  "model": "DeepSeek/DeepSeek V4 Pro",
+  "small_model": "DeepSeek/DeepSeek V4 Flash",
+  "agent": {
+    "architect": {
+      "model": "DeepSeek/DeepSeek V4 Pro"
+    },
+    "reviewer": {
+      "model": "DeepSeek/DeepSeek V4 Pro"
+    },
+    "debugger": {
+      "model": "DeepSeek/DeepSeek V4 Pro"
+    },
+    "implementer": {
+      "model": "DeepSeek/DeepSeek V4 Pro"
+    },
+    "tester": {
+      "model": "DeepSeek/DeepSeek V4 Pro"
+    },
+    "refactorer": {
+      "model": "DeepSeek/DeepSeek V4 Pro"
+    },
+    "helper": {
+      "model": "DeepSeek/DeepSeek V4 Flash"
+    }
+  },
+  "skills": {
+    "paths": [".opencode/skills"]
+  }
+}
