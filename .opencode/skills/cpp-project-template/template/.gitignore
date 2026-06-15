@@ -1,0 +1,23 @@
+# Build
+build/
+install/
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.user
+
+# Compiled artifacts
+*.exe
+*.dll
+*.lib
+*.obj
+*.o
+*.pdb
+*.ilk
+*.exp
+
+# Misc
+.DS_Store
+Thumbs.db
