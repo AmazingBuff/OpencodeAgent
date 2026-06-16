@@ -252,7 +252,10 @@ Layer 4: 约束条件确认
 |-------|----------|----------|
 | `project-scaffolding` | 新项目创建或需要理解项目结构时 | 加载后自动检测项目类型并适配布局 |
 | `testing-strategy` | 需要编写或运行测试时 | 加载后自动检测已有测试框架并适配 |
-| `python-style` | Python 项目编码时 | 加载 python-style 确保代码风格 |
+| `coding-strategy` | 编写、审查或重构代码时 | 提供行为准则，防止过度设计、确保手术式变更 |
+| `python-style` | Python 项目编码时 | 确保代码风格遵循 PEP 8/257/484 |
+| `cpp-cmake-coding-standards` | C++/CMake 项目编码时 | 确保命名、文件结构、CMake 配置符合规范 |
+| `cpp-project-template` | 从零创建 C++ 项目时 | 基于模板生成完整项目骨架，依赖上述两个规范 |
 
 **协作方式**：所有 skill 都遵循"检测-适配"模式而非"预设-执行"模式，
 因此即使项目使用非常规技术栈，agent 也会先探测再行动。

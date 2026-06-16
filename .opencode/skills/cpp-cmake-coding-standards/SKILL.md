@@ -601,7 +601,11 @@ add_custom_command(
         {
             "name": "msvc release",
             "displayName": "MSVC Release",
-            "inherits": "msvc debug",
+            "inherits": "msvc",
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release"
             }
@@ -665,7 +669,8 @@ set(THIRD_PARTY_INCLUDE_DIRS ${INCLUDE_DIRS} CACHE STRING "" FORCE)
 
 ## 一、注释规范
 
-- **禁止**在代码中添加注释，除非功能极度复杂
+- **禁止**添加解释性注释（描述"做了什么"），除非功能极度复杂
+- 文件头注释（见 2.1 节）和分组标记（如 `// 标准库`）是结构组成部分，不在此限
 - 代码应通过清晰的命名和结构自解释
 - 如果某段代码复杂到需要注释，优先考虑重构简化
 

@@ -32,7 +32,11 @@
         {
             "name": "msvc release",
             "displayName": "MSVC Release",
-            "inherits": "msvc debug",
+            "inherits": "msvc",
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release"
             }
@@ -69,6 +73,10 @@
             "name": "clang release",
             "displayName": "Clang Release",
             "inherits": "clang",
+            "architecture": {
+                "value": "x64",
+                "strategy": "external"
+            },
             "cacheVariables": {
                 "CMAKE_BUILD_TYPE": "Release"
             }
